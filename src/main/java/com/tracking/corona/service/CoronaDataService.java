@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -28,6 +29,7 @@ public class CoronaDataService {
 
 
     @PostConstruct
+    @Scheduled(cron = "* * 1 * * *")
     public void fetchData() {
 
         List<LocationState> newStats = new ArrayList<>();
