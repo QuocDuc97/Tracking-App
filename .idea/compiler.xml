@@ -10,7 +10,7 @@
         <module name="corona" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="corona" target="11" />
     </bytecodeTargetLevel>
   </component>

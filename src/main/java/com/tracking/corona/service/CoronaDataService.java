@@ -36,6 +36,7 @@ public class CoronaDataService {
         //create http client
         HttpClient httpClient = HttpClient.newHttpClient();
         //create http request
+
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(URI.create(DATA_URL))
                 .build();
